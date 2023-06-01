@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/rock.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+      <h3 id="modal-msg">hello</h3>
+      <button id="play-again-btn">play again</button>
+    </div>
+
+    <!-- HEALTH BARS!  -->
+    <div class="container">
+      <div class="bar-wrapper player-wrapper">
+        <div class="background-health">
+          <div class="health-bar player-health"></div>
+          <h1 class="game-text" id="playerText">
+            choose:
+            <br />
+            <span class="player-move-log"></span>
+          </h1>
+        </div>
+      </div>
+      <div class="bar-wrapper ai-wrapper">
+        <div class="background-health">
+          <div class="health-bar ai-health"></div>
+          <h1 class="game-text" id="computerText">
+            chooses:
+            <br />
+            <span class="ai-move-log"></span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- controls ! -->
+    <div id="controls-div">
+      <div id="result-text">~Fight log~</div>
+
+      <div class="next-move">your next move:</div>
+
+      <div class="btns-container">
+        <button class="choice-btn" data-weapon="ROCK">
+          <img class="weapon-svg" src="./assets/rock.svg" alt="rock svg" />
+        </button>
+        <button class="choice-btn" data-weapon="PAPER">
+          <img class="weapon-svg" src="./assets/paper.svg" alt="paper svg" />
+        </button>
+        <button class="choice-btn" data-weapon="SCISSORS">
+          <img class="weapon-svg" src="./assets/scissors.svg" alt="scissors svg" />
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
